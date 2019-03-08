@@ -54,6 +54,6 @@ namespace Diplomado_MVC_UASD_Login.Models
 		{
 			OnCreated();
 		}
-	}
+    }
 }
 #pragma warning restore 1591

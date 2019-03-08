@@ -11,11 +11,6 @@ namespace Diplomado_MVC_UASD_Login.Controllers
     {
         SessionData session = new SessionData();
         // GET: User
-        public ActionResult Index()
-        {
-            return View();
-        }
-
         public ActionResult Users()
         {
             ViewBag.User = session.getSession("userName");
