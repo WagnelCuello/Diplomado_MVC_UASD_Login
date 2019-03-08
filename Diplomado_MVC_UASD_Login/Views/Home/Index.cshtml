@@ -18,8 +18,20 @@
                 </div>
 
                 <div>
-                    
-                </div>
+                    @Html.PasswordFor(dl => dl.Password, new { @class = "form-control", @placeholder = "Password" })
+                    @Html.ValidationMessageFor(dl => dl.Password, "", new { @class = "text-danger" })
+                </div><br />
+                <input type="submit" name="Sign In" value="Entrar" class="btn btn-signin" />
+            }<br />
+            @Html.ActionLink("Sign In", "SignIn", "Home")
+            @{ 
+                if (!string.IsNullOrEmpty(ViewBag.Message))
+                {
+                    <script type="text/javascript">
+                        alert('El Email O Password Incorrecto');
+                        document.location = "Index";
+                    </script>
+                }
             }
         </div>
     </div>

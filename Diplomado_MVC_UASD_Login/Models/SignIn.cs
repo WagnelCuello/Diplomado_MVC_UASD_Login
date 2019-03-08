@@ -29,9 +29,10 @@ namespace Diplomado_MVC_UASD_Login.Models
         [Required(ErrorMessage = "El Password es requerido")]
         [Display(Name = "Password")]
         public string Password { get; set; }
-
+        
         UsersDataDataContext user = new UsersDataDataContext();
-        User obj = new User();
+        SignIn obj = new SignIn();
+
         public bool Signin()
         {
             var query = from u in user.Users

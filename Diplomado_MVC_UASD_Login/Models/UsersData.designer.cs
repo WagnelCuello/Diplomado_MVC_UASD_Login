@@ -31,7 +31,7 @@ namespace Diplomado_MVC_UASD_Login.Models
     partial void OnCreated();
     #endregion
 		
-		public UsersDataDataContext(string connection) : 
+		public UsersDataDataContext(string connection = null) : 
 				base(connection, mappingSource)
 		{
 			OnCreated();

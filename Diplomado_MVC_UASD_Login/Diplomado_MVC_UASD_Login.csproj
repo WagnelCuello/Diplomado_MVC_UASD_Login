@@ -223,10 +223,11 @@
     <Content Include="Scripts\popper-utils.js.map" />
     <Content Include="Views\Home\SignIn.cshtml" />
     <Content Include="Views\Home\Usuarios.cshtml" />
+    <Content Include="Views\Shared\_LayoutPages.cshtml" />
+    <Content Include="Views\User\Users.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\User\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
