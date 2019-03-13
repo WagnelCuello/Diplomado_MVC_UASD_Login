@@ -48,7 +48,7 @@ h2 {
 }
 
 .form-signin .form-control {
-    direction: 1tr;
+    /*direction: 1tr;*/
     height: 40px;
     font-size: 16px;
 }

@@ -31,16 +31,17 @@ namespace Diplomado_MVC_UASD_Login.Models
         public string Password { get; set; }
         
         UsersDataDataContext user = new UsersDataDataContext();
-        SignIn obj = new SignIn();
+        Users obj = new Users();
 
         public bool Signin()
         {
             var query = from u in user.Users
-                        where u.Email == Email ||
-                        u.UserName = UserName
+                        where u.Email == Email || u.UserName == UserName
                         select u;
             if (query.Count() > 0)
-            { }
+            {
+                return false;
+            }
             else
             {
                 obj.Name = Name;
